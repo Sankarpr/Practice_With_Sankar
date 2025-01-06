@@ -1,2 +1,4 @@
-package generics;public class Wildcard {
+package generics;
+
+public class Wildcard {
 }

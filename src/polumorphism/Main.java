@@ -1,5 +1,7 @@
 package polumorphism;
 
+import access.A;
+
 //Encapsulation: wrapping up the implementation of the data numbers and methods in a class
 //Abstraction: Hiding the unnecesary details only showing valuable information.
 public class Main {
@@ -9,6 +11,8 @@ public class Main {
         Shape square = new Square();
 
         square.area();
+        A a=new A(23,"Sankar");
+        a.getNmr();
 
     }
 }

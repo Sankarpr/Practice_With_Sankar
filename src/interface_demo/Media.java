@@ -1,2 +1,7 @@
-package interface_demo;public interface Media {
+package interface_demo;
+
+public interface Media {
+    void stop();
+    void start();
+
 }

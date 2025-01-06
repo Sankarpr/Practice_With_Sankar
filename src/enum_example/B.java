@@ -1,2 +1,5 @@
-package enum_example;public interface B {
+package enum_example;
+
+public interface B {
+    void msg();
 }

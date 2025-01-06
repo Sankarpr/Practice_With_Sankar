@@ -1,2 +1,4 @@
-package string_builder;public class DemoStringBuilder {
+package string_builder;
+
+public class DemoStringBuilder {
 }
