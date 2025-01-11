@@ -1,5 +1,6 @@
 package binarySearch;
-
+//Binary search is applicable only when the array is sorted order either ascending order or descending order
+//Linear search technic is start searching the target from start to end until and unless we meet the target.
 public class BinarySearchInArray {
     public static void main(String[] args) {
 

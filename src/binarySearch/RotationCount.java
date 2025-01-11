@@ -1,49 +1,16 @@
 package binarySearch;
 
-public class RBS {
+public class RotationCount {
     public static void main(String[] args) {
-        int [] arr = {4,5,6,7,4,3,1};
-        System.out.println(findPivot(arr));
+        int[] arr = {2,1};
+        System.out.println(countRotation(arr));
     }
-    public int search(int[] nums, int target)
+    private static int countRotation(int[] arr)
     {
-        int pivot = findPivot(nums);
-        //if no pivot array is not rotated
-        if(pivot == -1 )
-        {
-            return binarSearch(nums,target,0,nums.length - 1);
-        }
-        if (nums[pivot]==target)
-        {
-            return pivot;
-        }
-        if (target >= nums[0])
-        {
-            return binarSearch(nums, target,0,pivot - 1);
-        }
-        return binarSearch(nums, target, pivot + 1, nums.length-1);
-    }
-    static int binarSearch(int nums[], int target, int start, int end)
-    {
-        while (start <= end)
-        {
-            int mid = start + (end - start) / 2;
-            if (target < nums[mid])
-            {
-                end = mid - 1;
-            }
-            else if (target > nums[mid])
-            {
-                start = mid + 1;
-            }
-            else {
-                return mid;
-            }
-        }
-        return -1;
-    }
+        int pivot = findPivot(arr);
+        return pivot + 1;
 
-
+    }
     //this will not work in duplicate values
     static int findPivot(int arr[])
     {
@@ -66,7 +33,7 @@ public class RBS {
                 end = mid - 1;
             }
             else {
-                 start = mid + 1;
+                start = mid + 1;
             }
         }
         return - 1;
@@ -117,6 +84,5 @@ public class RBS {
         }
         return - 1;
     }
-
 
 }
