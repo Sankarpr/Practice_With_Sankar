@@ -2,8 +2,8 @@ package sort;
 
 import java.util.Arrays;
 
-//checking the adjacent element of the given array and the largest element will goes to at the end and it keeps checking via same process in the next iterartion another greater number will go in the second last .....
-//As the size of the array is growing the no. of comparisions is also growing
+//checking the adjacent element of the given array and the largest element will goes to at the end and it keeps checking via same process in the next iteration another greater number will go in the second last .....
+//As the size of the array is growing the no. of comparisons is also growing
 public class BubbleSort {
     public static void main(String[] args) {
 
