@@ -1,3 +1,4 @@
+/*
 package recursion;
 
 public class FiboRecurision {
@@ -33,7 +34,8 @@ public class FiboRecurision {
         }
         for(int i=2; i <= n; i++)
         {
-            return fi
+            //return fi
         }
     }
 }
+*/
